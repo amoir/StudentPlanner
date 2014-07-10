@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Student Planner</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0-rc.2/jquery.mobile-1.1.0-rc.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/main.js"></script> 
+    
+</head> 
+<body> 
+<div data-role="page">
+
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<h1>Submit</h1>
+	</div>
+    <!-- /header -->
+
+	<div data-role="content">	
+		<p>Please enter the name, date and time of your assignment submissions</p>		
+       
+      		<!--Name Enter-->
+   	  		<legend>Assignment Name</legend><label for="name" class="ui-hidden-accessible">Assignment name:</label>
+			<input type="text" name="name" id="name" value="" placeholder="Name"/>
+      <p>
+      		
+            <!--Date Enter-->
+     		<legend>Date of Assignment</legend><label for="dob" class="ui-hidden-accessible">Date of Assignment:</label>
+			<input type="date" name="dob" id="dob" value="" placeholder="Date of Assignment"/><p>
+            
+            <legend>Time Assignment is Due</legend><input type="text" data-role="date">
+      <p>	
+      <p> 
+      
+      <!--Submit Button-->
+      <div role="main" class="ui-content">
+    	<form action="assignments.html" method="get">
+      	<input type="submit" value="Submit" onClick="onSubmit()"/>	
+    	</form>
+ 	 </div>
+      		    
+</body>
+    </html>     
+      
+</div>
+</body>
+</html>
